@@ -48,11 +48,18 @@ nav {
   border-radius: 2px;
 }
 
-.nav-links li a:hover:not(.active) {
+.nav-links li:hover:not(.active) {
   background-color: aqua;
   color: darkblue;
 }
 
-.nav-links li a.active {
-  background-color: yellow;
+.nav-links li:not(.active) {
+  background-color: none;
+  border: 4px none;
+  padding-top: 5px;
+}
+
+.active {
+  border-bottom: 1px dashed yellow;
+  padding: 3px;
 }
